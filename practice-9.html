@@ -7,7 +7,10 @@
 	<script>
 		//コンポーネント
 		Vue.component('list-item',{
-			template: '<li>foo</li>'
+			template: '<li>foo</li>',
+			data: function(){
+				return{contents: 'bar'}
+			}
 		})
 
 		//ルート`Vue`インスタンスの作成
